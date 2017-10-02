@@ -13,7 +13,7 @@ namespace HW
         {
             InitializeComponent();
 
-            MainPage = new HW.GreetPage();
+            MainPage = new HW.QuotesPage();
         }
 
         protected override void OnStart()

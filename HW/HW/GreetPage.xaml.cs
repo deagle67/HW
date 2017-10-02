@@ -15,11 +15,7 @@ namespace HW
         public GreetPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            DisplayAlert("Title", "COUCOU", "Annuler");
-        }
+            slider.Value = 0.5f;
+        }        
     }
 }
