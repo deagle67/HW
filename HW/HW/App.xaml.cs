@@ -13,7 +13,7 @@ namespace HW
         {
             InitializeComponent();
 
-            MainPage = new HW.StackPage();
+            MainPage = new HW.Exo2();
         }
 
         protected override void OnStart()

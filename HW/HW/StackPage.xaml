@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HW.StackPage" Padding="0,20,0,0">
-	<StackLayout 
+	<!--<StackLayout 
 		VerticalOptions="Center" 
 		HorizontalOptions="Center" 
 		Spacing="0" 
@@ -12,5 +12,5 @@
 			<Label Text="Label1" />
 			<Label Text="Label2" />
 			<Label Text="Label3" />
-	</StackLayout>
+	</StackLayout>-->
 </ContentPage>
