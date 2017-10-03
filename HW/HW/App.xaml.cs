@@ -13,7 +13,7 @@ namespace HW
         {
             InitializeComponent();
 
-            MainPage = new HW.Exo2();
+            MainPage = new HW.GridExo2();
         }
 
         protected override void OnStart()
