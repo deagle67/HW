@@ -35,8 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AbsolutePage.xaml.cs">
+      <DependentUpon>AbsolutePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AsbEx1.xaml.cs">
+      <DependentUpon>AsbEx1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Exo1.xaml.cs">
       <DependentUpon>Exo1.xaml</DependentUpon>
@@ -128,6 +134,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="GridExo2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbsolutePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AsbEx1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

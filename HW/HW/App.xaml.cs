@@ -13,7 +13,7 @@ namespace HW
         {
             InitializeComponent();
 
-            MainPage = new HW.GridExo2();
+            MainPage = new HW.AbsolutePage();
         }
 
         protected override void OnStart()
