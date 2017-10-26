@@ -69,6 +69,12 @@
     <Compile Include="QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RelativePage.xaml.cs">
+      <DependentUpon>RelativePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RelEx1.xaml.cs">
+      <DependentUpon>RelEx1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
     </Compile>
@@ -155,6 +161,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AbsEx2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RelativePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RelEx1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
