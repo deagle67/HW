@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:local="clr-namespace:HW.MarkupExtensions"
+             x:Class="HW.ImagePage">
+	<AbsoluteLayout>
+		<ActivityIndicator IsRunning="{Binding Source={Reference image}, Path=IsLoading}"
+						   AbsoluteLayout.LayoutBounds="0.5, 0.5, 100, 100"
+						   AbsoluteLayout.LayoutFlags="PositionProportional" />
+		<Image Source="{local:EmbeddedImage HW.Images.background.jpg}" x:Name="image" Aspect="AspectFill"/>
+	</AbsoluteLayout>
+</ContentPage>

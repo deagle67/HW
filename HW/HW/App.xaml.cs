@@ -13,7 +13,7 @@ namespace HW
         {
             InitializeComponent();
 
-            MainPage = new HW.AbsolutePage();
+            MainPage = new HW.ImagePage();
         }
 
         protected override void OnStart()
