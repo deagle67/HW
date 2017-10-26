@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HW.PhotoGalleryEx" BackgroundColor="Black">
+	<AbsoluteLayout>
+		<Image 	AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+					AbsoluteLayout.LayoutFlags="All" 
+					x:Name="ImageDisplayed"/>
+		<Button AbsoluteLayout.LayoutBounds="0.05, 0.05, 100, 100"
+					AbsoluteLayout.LayoutFlags="PositionProportional"
+					BackgroundColor="Black"
+					x:Name="LeftButton" Clicked="LeftButton_Clicked">
+			<Button.Image>
+				<OnPlatform x:TypeArguments="FileImageSource" 
+					iOS="left.png"
+					Android="left.png"/>
+			</Button.Image>
+		</Button>
+
+		<ActivityIndicator IsRunning="{Binding Source={x:Reference ImageDisplayed}, Path=IsLoading}" 
+				Color="White"
+				AbsoluteLayout.LayoutBounds="0.5, 0.5, 40, 40"
+				AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+		<Button AbsoluteLayout.LayoutBounds="0.95, 0.05, 100, 100"
+				AbsoluteLayout.LayoutFlags="PositionProportional"
+				BackgroundColor="Black"
+				x:Name="RightButton" Clicked="RightButton_Clicked">
+			
+			<Button.Image>
+				<OnPlatform x:TypeArguments="FileImageSource" 
+					iOS="right.png"
+					Android="right.png"/>
+			</Button.Image>
+		</Button>
+			
+	</AbsoluteLayout>
+</ContentPage>
