@@ -16,8 +16,10 @@ namespace HW
 		{
 			InitializeComponent ();
 
-            image.Source = ImageSource.FromResource("HW.Images.background.jpg");
-
+            btn.Image = (FileImageSource)ImageSource.FromFile(Device.OnPlatform(
+                iOS:"clock.png",
+                Android:"clock.png"              
+                ));
 		}
 	}
 }
