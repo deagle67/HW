@@ -47,6 +47,12 @@
     <Compile Include="AsbEx1.xaml.cs">
       <DependentUpon>AsbEx1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="List.xaml.cs">
+      <DependentUpon>List.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListExo.xaml.cs">
+      <DependentUpon>ListExo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MarkupExtensions\EmbeddedImage.cs" />
     <Compile Include="Exo1.xaml.cs">
       <DependentUpon>Exo1.xaml</DependentUpon>
@@ -69,6 +75,8 @@
     <Compile Include="ImagePage.xaml.cs">
       <DependentUpon>ImagePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="PhotoGalleryEx.xaml.cs">
       <DependentUpon>PhotoGalleryEx.xaml</DependentUpon>
     </Compile>
@@ -198,6 +206,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="PhotoGalleryEx.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="List.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ListExo.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
