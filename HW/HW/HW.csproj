@@ -47,6 +47,12 @@
     <Compile Include="AsbEx1.xaml.cs">
       <DependentUpon>AsbEx1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContactDetailPage.xaml.cs">
+      <DependentUpon>ContactDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactsPage.xaml.cs">
+      <DependentUpon>ContactsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="IntroductionPage.xaml.cs">
       <DependentUpon>IntroductionPage.xaml</DependentUpon>
     </Compile>
@@ -239,6 +245,16 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="WelcomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContactDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
