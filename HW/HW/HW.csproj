@@ -35,80 +35,80 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AbsEx2.xaml.cs">
+    <Compile Include="Pages\AbsEx2.xaml.cs">
       <DependentUpon>AbsEx2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AbsolutePage.xaml.cs">
+    <Compile Include="Pages\AbsolutePage.xaml.cs">
       <DependentUpon>AbsolutePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AsbEx1.xaml.cs">
+    <Compile Include="Pages\AsbEx1.xaml.cs">
       <DependentUpon>AsbEx1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ContactDetailPage.xaml.cs">
+    <Compile Include="Pages\ContactDetailPage.xaml.cs">
       <DependentUpon>ContactDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ContactsPage.xaml.cs">
+    <Compile Include="Pages\ContactsPage.xaml.cs">
       <DependentUpon>ContactsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="IntroductionPage.xaml.cs">
+    <Compile Include="Pages\IntroductionPage.xaml.cs">
       <DependentUpon>IntroductionPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="List.xaml.cs">
+    <Compile Include="Pages\List.xaml.cs">
       <DependentUpon>List.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ListExo.xaml.cs">
+    <Compile Include="Pages\ListExo.xaml.cs">
       <DependentUpon>ListExo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MarkupExtensions\EmbeddedImage.cs" />
-    <Compile Include="Exo1.xaml.cs">
+    <Compile Include="Pages\Exo1.xaml.cs">
       <DependentUpon>Exo1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Exo2.xaml.cs">
+    <Compile Include="Pages\Exo2.xaml.cs">
       <DependentUpon>Exo2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GreetPage.xaml.cs">
+    <Compile Include="Pages\GreetPage.xaml.cs">
       <DependentUpon>GreetPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GridExo1.xaml.cs">
+    <Compile Include="Pages\GridExo1.xaml.cs">
       <DependentUpon>GridExo1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GridExo2.xaml.cs">
+    <Compile Include="Pages\GridExo2.xaml.cs">
       <DependentUpon>GridExo2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GridPage.xaml.cs">
+    <Compile Include="Pages\GridPage.xaml.cs">
       <DependentUpon>GridPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ImagePage.xaml.cs">
+    <Compile Include="Pages\ImagePage.xaml.cs">
       <DependentUpon>ImagePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="Models\Search.cs" />
     <Compile Include="Models\SearchGroup.cs" />
-    <Compile Include="PhotoGalleryEx.xaml.cs">
+    <Compile Include="Pages\PhotoGalleryEx.xaml.cs">
       <DependentUpon>PhotoGalleryEx.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuotesPage.xaml.cs">
+    <Compile Include="Pages\QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RelativePage.xaml.cs">
+    <Compile Include="Pages\RelativePage.xaml.cs">
       <DependentUpon>RelativePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RelEx1.xaml.cs">
+    <Compile Include="Pages\RelEx1.xaml.cs">
       <DependentUpon>RelEx1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Services\SearchService.cs" />
-    <Compile Include="StackPage.xaml.cs">
+    <Compile Include="Pages\StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WelcomePage.xaml.cs">
+    <Compile Include="Pages\WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -119,7 +119,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GreetPage.xaml">
+    <EmbeddedResource Include="Pages\GreetPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -142,79 +142,79 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="QuotesPage.xaml">
+    <EmbeddedResource Include="Pages\QuotesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="StackPage.xaml">
+    <EmbeddedResource Include="Pages\StackPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Exo1.xaml">
+    <EmbeddedResource Include="Pages\Exo1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Exo2.xaml">
+    <EmbeddedResource Include="Pages\Exo2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GridPage.xaml">
+    <EmbeddedResource Include="Pages\GridPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GridExo1.xaml">
+    <EmbeddedResource Include="Pages\GridExo1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GridExo2.xaml">
+    <EmbeddedResource Include="Pages\GridExo2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AbsolutePage.xaml">
+    <EmbeddedResource Include="Pages\AbsolutePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AsbEx1.xaml">
+    <EmbeddedResource Include="Pages\AsbEx1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AbsEx2.xaml">
+    <EmbeddedResource Include="Pages\AbsEx2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="RelativePage.xaml">
+    <EmbeddedResource Include="Pages\RelativePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="RelEx1.xaml">
+    <EmbeddedResource Include="Pages\RelEx1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ImagePage.xaml">
+    <EmbeddedResource Include="Pages\ImagePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -223,50 +223,53 @@
     <EmbeddedResource Include="Images\background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="PhotoGalleryEx.xaml">
+    <EmbeddedResource Include="Pages\PhotoGalleryEx.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="List.xaml">
+    <EmbeddedResource Include="Pages\List.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ListExo.xaml">
+    <EmbeddedResource Include="Pages\ListExo.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="IntroductionPage.xaml">
+    <EmbeddedResource Include="Pages\IntroductionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="WelcomePage.xaml">
+    <EmbeddedResource Include="Pages\WelcomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ContactDetailPage.xaml">
+    <EmbeddedResource Include="Pages\ContactDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ContactsPage.xaml">
+    <EmbeddedResource Include="Pages\ContactsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MainPage.xaml">
+    <EmbeddedResource Include="Pages\MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InstagramExo\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.4.0.18342\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.4.0.18342\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
