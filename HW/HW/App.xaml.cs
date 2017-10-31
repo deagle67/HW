@@ -13,7 +13,7 @@ namespace HW
         {
             InitializeComponent();
 
-            MainPage = new HW.MainPage();
+            MainPage = new NavigationPage(new HW.InstagramExo.MainPage());
         }
 
         protected override void OnStart()

@@ -9,9 +9,12 @@ namespace HW
 	{
 		void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
 		{
+            if (e.SelectedItem == null)
+                return;
 			var contact = e.SelectedItem as Contact;
 			Detail = new NavigationPage(new ContactDetailPage(contact));
 			IsPresented = false;
+            listView.SelectedItem = null;
 		}
 
 		public ContactsPage()

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using HW.Models;
 
-namespace InstagramApp
+namespace HW
 {
 	public class ActivityService
 	{

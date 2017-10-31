@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using HW.Models;
 
-namespace InstagramApp
+namespace HW
 {
 	public class UserService
 	{

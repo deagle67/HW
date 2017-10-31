@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="HW.InstagramExo.MainPage"
+			 xmlns:local="clr-namespace:HW.InstagramExo"
+			 BackgroundColor="White" BarBackgroundColor="White" BarTextColor="Black">
+	<ContentPage.Padding>
+	<OnPlatform x:TypeArguments="Thickness">
+		<OnPlatform.iOS>
+			0, 20, 0, 0
+		</OnPlatform.iOS>
+	</OnPlatform>
+	</ContentPage.Padding>
+
+	<local:ListEventsPage Title="Notifications" Icon="heart.png"/>
+	<local:ProfilePage Title="Profile" Icon="user.png"/>
+
+</TabbedPage>

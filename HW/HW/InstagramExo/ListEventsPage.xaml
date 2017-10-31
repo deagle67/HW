@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="HW.InstagramExo.ListEventsPage"
+			 xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
+	<ListView x:Name="listEvents" ItemSelected="ListEvents_ItemSelected">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+					<StackLayout Orientation="Horizontal">
+						<controls:CircleImage Source="{Binding ImageUrl}" Aspect="AspectFill"
+														  Margin="5, 0, 0, 5">
+							<controls:CircleImage.WidthRequest>
+								<OnPlatform x:TypeArguments="x:Double" iOS="30" Android="30"/>
+							</controls:CircleImage.WidthRequest>
+							<controls:CircleImage.HeightRequest>
+								<OnPlatform x:TypeArguments="x:Double" iOS="30" Android="30"/>
+							</controls:CircleImage.HeightRequest>
+						</controls:CircleImage>
+						<Label Text="{Binding Description}" 
+										   HorizontalTextAlignment="Start" 
+										   FontSize="Micro" 
+										   VerticalTextAlignment="Center"/>
+					</StackLayout>
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+</ContentPage>
