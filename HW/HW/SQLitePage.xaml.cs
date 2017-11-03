@@ -7,15 +7,37 @@ using SQLite;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace HW
 {
-    public class Recipe
+    public class Recipe : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+
+        private string _name;
         [MaxLength(255)]
-        public string Name { get; set; }
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                if (_name == value)
+                    return;
+
+                _name = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -43,26 +65,26 @@ namespace HW
             base.OnAppearing();          
         }
 
-        void OnAdd(object sender, System.EventArgs e)
+        async void OnAdd(object sender, System.EventArgs e)
         {
             var recipe = new Recipe { Name = "Recipe" + DateTime.Now.Ticks };
-            _connection.InsertAsync(recipe);
+            await _connection.InsertAsync(recipe);
             _recipes.Add(recipe);
         }
 
-        void OnUpdate(object sender, System.EventArgs e)
+        async void OnUpdate(object sender, System.EventArgs e)
         {
             var recipe = _recipes[0];
             recipe.Name += "_UPDATED";
 
-            _connection.UpdateAsync(recipe);
+            await _connection.UpdateAsync(recipe);
         }
 
-        void OnDelete(object sender, System.EventArgs e)
+        async void OnDelete(object sender, System.EventArgs e)
         {
             var recipe = _recipes[0];
 
-            _connection.DeleteAsync(recipe);
+            await _connection.DeleteAsync(recipe);
             _recipes.Remove(recipe);
         }
     }
