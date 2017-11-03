@@ -13,7 +13,7 @@ namespace HW
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new ExoContacts());
+            MainPage = new SQLitePage();
         }
 
         protected override void OnStart()
