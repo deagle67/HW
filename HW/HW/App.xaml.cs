@@ -13,7 +13,7 @@ namespace HW
         {
             InitializeComponent();
 
-            MainPage = new HW.Forms();
+            MainPage = new NavigationPage(new ExoContacts());
         }
 
         protected override void OnStart()

@@ -35,10 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ExoContacts.xaml.cs">
+      <DependentUpon>ExoContacts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Extensions\DateCell.xaml.cs">
       <DependentUpon>DateCell.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms.xaml.cs">
+    <Compile Include="Models\UserContact.cs" />
+    <Compile Include="ModifyUserContact.xaml.cs">
+      <DependentUpon>ModifyUserContact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Forms.xaml.cs">
       <DependentUpon>Forms.xaml</DependentUpon>
     </Compile>
     <Compile Include="InstagramExo\ContactPage.xaml.cs">
@@ -125,6 +132,7 @@
       <DependentUpon>RelEx1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Services\ActivityService.cs" />
+    <Compile Include="Services\ContactsService.cs" />
     <Compile Include="Services\SearchService.cs" />
     <Compile Include="Pages\StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
@@ -315,13 +323,25 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms.xaml">
+    <EmbeddedResource Include="Pages\Forms.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Extensions\DateCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExoContacts.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModifyUserContact.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
